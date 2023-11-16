@@ -9,14 +9,14 @@ let tmp = "";
 rl.on('line', function (line) {
     input = [line];
 }).on('close',function(){
-    str = input[0];
-    
-    for(let i = 0; i < str.length; i++) {
-        if(str[i] == str[i].toLowerCase()) {
-            tmp += str[i].toUpperCase();
+    str = input[0].split('');
+
+    str.forEach((value, index) => {
+        if( value === value.toUpperCase()) {
+            str[index] = value.toLowerCase();
         } else {
-            tmp += str[i].toLowerCase();
+            str[index] = value.toUpperCase();
         }
-    }
-    console.log(tmp);
+    })
+    console.log(str.join(''));
 });
