@@ -12,5 +12,7 @@ rl.on('line', function (line) {
     let a = Number(input[0]);
     let b = Number(input[1]);
     
-    console.log(a+ ' + ' +b+ ' = ' + (a+b));
+    if((a>=1 && a<=100) && (b>=1 && b<=100)) {
+        console.log(a+ ' + ' +b+ ' = ' + (a+b));
+    }
 });
