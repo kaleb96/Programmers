@@ -8,3 +8,7 @@ function solution(a, b) {
     } else 
         return tmp2;
 }
+
+// function solution(a, b) {
+//     return Math.max(Number(`${a}${b}`), Number(`${b}${a}`))
+// }
