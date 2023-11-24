@@ -9,3 +9,5 @@ function solution(num, n) {
         }
     }
 }
+// == 은 동등연산자로 값의 일치 여부에 따른 true/false 
+// === 은 일치연산자로 값과 타입의 일치 여부에 따른 true/false
