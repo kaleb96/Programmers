@@ -1,5 +1,7 @@
 function solution(myString) {
     var answer = '';
-    answer = myString.toUpperCase();
+    if(myString.length >=1 && myString.length <= 100000) { // 제한사항
+        answer = myString.toUpperCase();
+    }
     return answer;
 }
