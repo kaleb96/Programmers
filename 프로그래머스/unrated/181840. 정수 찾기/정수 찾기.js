@@ -1,6 +1,6 @@
-function solution(arr, n) {
+// function solution(arr, n) {
     
-    if((arr.length >= 3 && arr.length <= 100) && (n >= 1 && n <= 100)) { // 제한사항
+//     if((arr.length >= 3 && arr.length <= 100) && (n >= 1 && n <= 100)) { // 제한사항
 //         let flag = 0;
 //         for(let e of arr) {
             
@@ -30,10 +30,19 @@ includes :
 배열에 특정 값이 있는 여부에 따라 불리언 타입을 반환!
 
 */
+//         if(arr.includes(n))
+//             return 1;
+//         else 
+//             return 0;
+//     }
+// }
+
+const solution = (arr, n) => {
+    if((arr.length >= 3 && arr.length <=100)) {
+       
         if(arr.includes(n))
             return 1;
-        else 
+        else
             return 0;
     }
 }
-
