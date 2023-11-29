@@ -1,3 +1,4 @@
+// 함수 선언식 형태
 // function solution(arr, n) {
     
 //     if((arr.length >= 3 && arr.length <= 100) && (n >= 1 && n <= 100)) { // 제한사항
@@ -37,6 +38,7 @@ includes :
 //     }
 // }
 
+// 함수표현식 형태
 const solution = (arr, n) => {
     if((arr.length >= 3 && arr.length <=100)) {
        
