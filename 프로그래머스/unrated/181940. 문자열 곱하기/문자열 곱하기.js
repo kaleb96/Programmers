@@ -1,8 +1,11 @@
-function solution(my_string, k) {
-    var answer = '';
+function solution(str, k) {
+    let answer = '';
   
-    if((1>= my_string.length <= 100) && (1>= k <= 100)) {
-        answer = my_string.repeat(k);
+    if((1>= str.length <= 100) && (1>= k <= 100)) {
+        // answer = str.repeat(k);
+        for(let i = 0; i < k; i++) {
+            answer += str;
+        }
     }
     return answer;
 }
