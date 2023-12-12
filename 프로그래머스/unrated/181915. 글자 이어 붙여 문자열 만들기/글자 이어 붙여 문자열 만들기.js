@@ -1,11 +1,5 @@
-function solution(my_string, index_list) {
-    var answer = '';
-    return answer;
-}
-
-function solution(my_string, index_list) {
+const solution = (my_string, index_list) => {
     
-    let answer = ''; 
 //         for(let i = 0; i<index_list.length; i++) {
 
 //             let idx = index_list[i];
