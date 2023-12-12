@@ -1,4 +1,10 @@
+// function solution(my_string, index_list) {
+//     var answer = '';
+//     return answer;
+// }
+
 const solution = (my_string, index_list) => {
+    
     
 //         for(let i = 0; i<index_list.length; i++) {
 
@@ -6,8 +12,14 @@ const solution = (my_string, index_list) => {
 //             answer += my_string[idx];
 //         }
 //         return answer;
-        return index_list.map(i => my_string[i]).join('');
+        // let result = index_list.map(i => my_string[i]).join('');  
+        // return result;
 
+        let result = index_list.reduce((acc, idx) => {
+            
+            return acc + my_string[idx];
+        }, '')
+        return result;
 }
 
 /*
