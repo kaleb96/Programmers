@@ -1,9 +1,10 @@
+// Get diceSet
 function getDiceSet(a, b, c, d) {
     return Array.from(new Set([a, b, c, d]));
 }
-
+// Get calculation
 function getSolution(len, diceList, origin) {
-    console.log('diceList = ', diceList)
+
     let result = 0;
     switch(len) {
         case 4: {
@@ -44,11 +45,11 @@ function getSolution(len, diceList, origin) {
             })
             if(twiceForEach) {
                 const [ p, q ] = diceList;
-                console.log('twiceForEach p = ',p, 'q = ', q);
                 const sub = p - q > 0 ? p - q : (p - q) * -1;
                 result = (p + q) * sub;
-                console.log('result = ', result)
             } else {
+                // 세 개의 값은 먼저올 수 도 있고 나중에 올 수도 있음
+                // 정확한 p와 q를 추출해야함
                 result = Math.pow((10 * p + q), 2);
             }
             break;
